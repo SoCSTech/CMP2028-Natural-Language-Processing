@@ -1,9 +1,9 @@
 {
-    "name": "MODULE",
+    "name": "Natural Language Processing",
     
-    "image": "ghcr.io/socstech/MODULE:latest",
+    //"image": "ghcr.io/socstech/cmp2028:latest",
 
-    //"build": { "dockerfile": "Dockerfile" },
+    "build": { "dockerfile": "Dockerfile" },
 
     "customizations": {
         "vscode": {
