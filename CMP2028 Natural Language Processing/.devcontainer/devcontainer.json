@@ -1,24 +1,25 @@
 {
-    "name": "Natural Language Processing",
-    
-    "image": "ghcr.io/socstech/cmp2028:latest",
-    "runArgs": ["--gpus=all"],
+  "name": "Natural Language Processing",
 
-    //"build": { "dockerfile": "Dockerfile" },
+  "image": "ghcr.io/socstech/cmp2028:latest",
 
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "ms-azuretools.vscode-docker",
-                "ms-toolsai.jupyter",
-                "ms-toolsai.vscode-jupyter-cell-tags",
-                "ms-toolsai.jupyter-renderers",
-                "ms-toolsai.vscode-jupyter-slideshow",
-                "ms-python.vscode-pylance",
-                "ms-python.python",
-                "ms-python.debugpy",
-                "ms-toolsai.jupyter-keymap"
-            ]
-        }
+  "runArgs": ["--gpus=all"],
+
+  //"build": { "dockerfile": "Dockerfile" },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.vscode-jupyter-slideshow",
+        "ms-python.vscode-pylance",
+        "ms-python.python",
+        "ms-python.debugpy",
+        "ms-toolsai.jupyter-keymap"
+      ]
     }
+  }
 }
