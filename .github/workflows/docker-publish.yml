@@ -67,6 +67,15 @@ jobs:
         with:
           images: ghcr.io/socstech/cmp2028 # THIS LINE MUST BE EDITED FOR NEW MODULES
 
+      # Work around to get more space on the runner
+      # Based on: https://github.com/actions/runner-images/issues/2840#issuecomment-790492173
+      - name: Get extra free space
+        id: free-space
+        run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /opt/ghc
+          sudo rm -rf "/usr/local/share/boost"
+          sudo rm -rf "$AGENT_TOOLSDIRECTORY"
 
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
